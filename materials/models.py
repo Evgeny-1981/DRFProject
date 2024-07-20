@@ -31,7 +31,7 @@ class Lesson(models.Model):
                                     **NULLABLE)
 
     def __str__(self):
-        return f"Урок: {self.name} - курс {name_course}"
+        return f"Урок: {self.name} - курс {self.name_course}"
 
     class Meta:
         db_table = "lesson"
