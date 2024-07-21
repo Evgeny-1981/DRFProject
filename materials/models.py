@@ -31,10 +31,10 @@ class Lesson(models.Model):
                                     **NULLABLE)
 
     def __str__(self):
-        return f"Урок: {self.name} - курс {self.name_course}"
+        return f"{self.name}"
 
     class Meta:
         db_table = "lesson"
         verbose_name = "Урок"
         verbose_name_plural = "Уроки"
-        ordering = ("name", "name_course",)
+        ordering = ("name", )
