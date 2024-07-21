@@ -16,4 +16,4 @@ urlpatterns = [
                   path('users/<int:pk>/', UserRetrieveAPIView.as_view(), name='user_get'),
                   path('users/delete/<int:pk>', UserDestroyAPIView.as_view(), name='user_delete'),
                   path('users/payments/', PaymentListAPIView.as_view(), name='payment_get'),
-              ] + router.urls
+              ]
