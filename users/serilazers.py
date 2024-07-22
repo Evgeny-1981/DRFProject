@@ -4,7 +4,6 @@ from users.models import User, Payment
 
 
 class PaymentSerializer(serializers.ModelSerializer):
-    # payment_status = serializers.SerializerMethodField(read_only=True)
 
     class Meta:
         model = Payment

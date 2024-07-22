@@ -162,5 +162,3 @@ cython_debug/
 .venv/
 .env
 media/
-
-debug.log
